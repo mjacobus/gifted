@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Gifs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Url</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gifs.each do |gif| %>
+      <tr>
+        <td><%= gif.title %></td>
+        <td><%= gif.url %></td>
+        <td><%= gif.name %></td>
+        <td><%= gif.email %></td>
+        <td><%= link_to 'Show', gif %></td>
+        <td><%= link_to 'Edit', edit_gif_path(gif) %></td>
+        <td><%= link_to 'Destroy', gif, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gif', new_gif_path %>

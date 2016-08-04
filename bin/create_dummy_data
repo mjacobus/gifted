@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+INCLUDE_DUMMY_DATA=1 ./bin/rake db:seed

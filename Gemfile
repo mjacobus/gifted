@@ -46,3 +46,22 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+group :test do
+  gem 'rails-controller-testing'
+  gem 'machinist', '~>2.0'
+  gem 'simplecov', require: false
+  gem 'coveralls'
+  gem 'scrutinizer-ocular'
+  gem 'database_cleaner', '~>1.5'
+  gem 'minitest-around', '~>0.3'
+  gem 'minitest-rg'
+  gem 'shoulda', '~>3.5'
+  gem 'shoulda-matchers', '~> 2.0'
+  gem 'shoulda-context', '~>1.2'
+  gem 'minitest-spec-rails'
+  gem 'mocha'
+  gem "capybara"
+  gem "poltergeist"
+  gem "faker"
+end
