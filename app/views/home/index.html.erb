@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Publish Gif', new_gif_path %>
+
+<% @gifs.each do |gif| %>
+  <article>
+    <h2> <%= gif.title %> </h2>
+    <div class="image">
+      <img src="<%= gif.url %>" alt="Missing Gif">
+    </div>
+    <small>Published by <%= gif.name %></small>
+  </article>
+<% end %>

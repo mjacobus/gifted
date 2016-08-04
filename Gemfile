@@ -48,6 +48,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :test do
+  gem 'rails-controller-testing'
   gem 'machinist', '~>2.0'
   gem 'simplecov', require: false
   gem 'coveralls'
