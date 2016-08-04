@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require File.expand_path(File.dirname(__FILE__) + '/../test/support/test_records')
+require File.expand_path(File.dirname(__FILE__) + '/seeds_dummy') if ENV['INCLUDE_DUMMY_DATA']

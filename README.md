@@ -19,7 +19,7 @@ bundle install
 ```bash
 rake db:create                    # crete database
 rake db:migrate                   # create tables
-INCLUDE_DUMMY_DATA=1 rake db:seed # loads dummy data
+./bin/create_dummy_data           # loads dummy data
 ```
 
 \* - Requires mysql. To change driver or credentials please refer

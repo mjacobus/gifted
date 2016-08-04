@@ -1,9 +1,7 @@
 require 'machinist/active_record'
 
-# Add your blueprints here.
-#
-# e.g.
-#   Post.blueprint do
-#     title { "Post #{sn}" }
-#     body  { "Lorem ipsum..." }
-#   end
+Gif.blueprint do
+  email { Faker::Internet.email }
+  title { "title #{sn}" }
+  name { Faker::Name.name }
+end

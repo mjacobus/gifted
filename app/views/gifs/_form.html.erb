@@ -1,0 +1,37 @@
+<%= form_for(gif) do |f| %>
+  <% if gif.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gif.errors.count, "error") %> prohibited this gif from being saved:</h2>
+
+      <ul>
+      <% gif.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :url %>
+    <%= f.text_field :url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

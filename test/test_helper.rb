@@ -9,3 +9,5 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
+
+Dir[File.expand_path("../support/**/*.rb", __FILE__)].each { |rb| require(rb) }

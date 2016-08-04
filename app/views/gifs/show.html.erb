@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @gif.title %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @gif.url %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @gif.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @gif.email %>
+</p>
+
+<%= link_to 'Edit', edit_gif_path(@gif) %> |
+<%= link_to 'Back', gifs_path %>
