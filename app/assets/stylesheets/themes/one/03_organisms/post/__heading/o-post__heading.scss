@@ -1,0 +1,5 @@
+.o-post__heading {
+    @include tablet-desktop {
+        font-size: 2em;
+    }
+}

@@ -3,11 +3,13 @@
 <%= link_to 'Publish Gif', new_gif_path %>
 
 <% @gifs.each do |gif| %>
-  <article>
-    <h2> <%= gif.title %> </h2>
-    <div class="image">
-      <img src="<%= gif.url %>" alt="Missing Gif">
-    </div>
-    <small>Published by <%= gif.name %></small>
+
+  <article class="o-post">
+    <h1 class="o-post__heading a-heading a-heading--dark">
+      <a class="a-heading--link"><%= gif.title %></a>
+    </h1>
+    <a>
+      <img class="o-post__image a-image" src="<%= gif.url %>" width="500" height="299">
+    </a>
   </article>
 <% end %>

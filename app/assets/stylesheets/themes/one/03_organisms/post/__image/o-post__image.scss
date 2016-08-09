@@ -1,0 +1,7 @@
+.o-post__image {
+    cursor: pointer;
+    
+    @include desktop {
+        max-width: 500px;
+    }
+}

@@ -1,0 +1,20 @@
+.a-logo {
+    align-items: center;
+    background: url("../logo.png") no-repeat center center transparent;
+    background-size: contain;
+    color: #fff;
+    display: flex;
+    flex-grow: 1;
+    height: 85%;
+    justify-content: center;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include tablet-desktop {
+        flex-grow: 0;
+        order: -1;
+        text-align: left;
+        width: 170px;
+    }
+}
