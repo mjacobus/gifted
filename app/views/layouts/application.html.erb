@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Gifted</title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'themes/one/all', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <%= stylesheet_link_tag '05_pages/home', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
+<body>
     <header class="o-header">
         <svg class="o-header__menu-main-icon a-icon a-icon--light" id="menu-main-icon">
             <use xlink:href="symbol-defs.svg#icon-menu"></use>
         </svg>
         <div class="m-menu-main" id="menu-main">
             <a class="m-menu-main__item a-link a-link--light" href="about.html">About</a>
-            <a class="m-menu-main__item a-link a-link--light" href="submit.html">Submit</a>
+            <%= link_to 'Submit', new_gif_path, :class => "m-menu-main__item a-link a-link--light" %>
         </div>
 
-        <div class="a-logo"></div>
+        <a class="a-logo" href="/" title="Home"></a>
 
         <div class="m-menu-account" id="menu-account">
             <a class="m-menu-account__link a-link a-link--light" href="login.html">Log In</a>
@@ -47,7 +46,7 @@
             </section>
         </aside>
 
-      <%= yield %>
+        <%= yield %>
     </main>
 
     <!-- <div class="a-overlay" id="overlay"></div> -->
@@ -60,5 +59,7 @@
             <li></li>
         </ul>
     </footer>
-  </body>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</body>
 </html>
