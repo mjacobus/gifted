@@ -1,0 +1,17 @@
+.a-subheading {
+    cursor: pointer;
+    font-family: $font--heading;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    text-align: left;
+    transition: color 0.3s;
+    width: 100%;
+
+    &:hover, &:active {
+        color: $color__font--primary;
+    }
+}
+
+@import "a-subheading--dark";
+@import "a-subheading--light";

@@ -1,16 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+    <meta charset="utf-8">
     <title>Gifted</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag '05_pages/home', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700&subset=latin-ext">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700">
+</head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<body>
+    <header class="o-header">
+        <svg class="o-header__menu-main-icon a-icon a-icon--light" id="menu-main-icon">
+            <use xlink:href="symbol-defs.svg#icon-menu"></use>
+        </svg>
+        <div class="m-menu-main" id="menu-main">
+            <a class="m-menu-main__item a-link a-link--light" href="about.html">About</a>
+            <%= link_to 'Submit', new_gif_path, :class => "m-menu-main__item a-link a-link--light" %>
+        </div>
+
+        <a class="a-logo" href="/" title="Home"></a>
+
+        <div class="m-menu-account" id="menu-account">
+            <a class="m-menu-account__link a-link a-link--light" href="login.html">Log In</a>
+            <button class="m-menu-account__button a-button a-button--light">Sign Up</button>
+        </div>
+        <svg class="o-header__menu-account-icon a-icon a-icon--light" id="menu-account-icon">
+            <use xlink:href="symbol-defs.svg#icon-more_vert"></use>
+        </svg>
+    </header>
+    <main class="o-content">
+        <aside class="o-sidebar">
+            <section class="o-sidebar__section">
+                <h3 class="o-sidebar__title">Advertisement</h3>
+                <img class="o-sidebar__image a-image" src="img/fake.jpg" width="500" height="299">
+            </section>
+
+            <section class="o-sidebar__section">
+                <h3 class="o-sidebar__title">Hot on gifted:</h3>
+                <div>
+                    <img class="o-sidebar__image a-image" src="img/fake.jpg" width="500" height="299">
+                </div>
+                <h2 class="a-subheading a-subheading--dark"><a>Fake bugfix</a></h2>
+                <div>
+                    <img class="o-sidebar__image a-image" src="img/cat.jpg" width="1600" height="800">
+                </div>
+                <h2 class="a-subheading a-subheading--dark"><a>Top 10 binary numbers</a></h2>
+            </section>
+        </aside>
+
+        <%= yield %>
+    </main>
+
+    <!-- <div class="a-overlay" id="overlay"></div> -->
+
+    <footer>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </footer>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <div id="content">
-      <%= yield %>
-    </div>
-  </body>
+</body>
 </html>

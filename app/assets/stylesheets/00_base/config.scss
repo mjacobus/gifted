@@ -1,0 +1,56 @@
+/**
+ * Color
+ */
+$color__background--primary: #3498db;
+$color__background--dark: #34495e;
+$color__background--medium: #ecf0f1;
+$color__background--light: #ffffff;
+
+$color__font--primary: #3498db;
+$color__font--dark: #4e5e6a;
+$color__font--light: #ffffff;
+
+/**
+ * Size
+ */
+$size__font--phone: 13px;
+$size__font--tablet: 16px;
+$size__font--desktop: 16px;
+
+/**
+ * Breakpoints
+ */
+$width--mobile: 480px;
+$width--tablet: 920px;
+
+@mixin mobile {
+    @media (max-width: #{$width--mobile}) {
+        @content;
+    }
+}
+@mixin mobile-tablet {
+    @media (max-width: #{$width--tablet}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: #{$width--mobile + 1px}) and (max-width: #{$width--tablet}) {
+        @content;
+    }
+}
+@mixin tablet-desktop {
+    @media (min-width: #{$width--mobile + 1px}) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$width--tablet + 1px}) {
+        @content;
+    }
+}
+
+/**
+ * Misc
+ */
+$font--heading: "Josefin Sans", Helvetica, Arial, sans-serif;
+$font--text: "Roboto", Helvetica, Arial, sans-serif;

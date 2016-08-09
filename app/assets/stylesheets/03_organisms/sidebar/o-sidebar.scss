@@ -1,0 +1,16 @@
+.o-sidebar {
+    display: none;
+
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        left: 73%;
+        position: absolute;
+        right: 0;
+        top: 1rem;
+    }
+}
+
+@import "__title/o-sidebar__title";
+@import "__image/o-sidebar__image";
+@import "__section/o-sidebar__section";

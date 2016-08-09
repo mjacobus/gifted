@@ -1,0 +1,8 @@
+.a-heading--link {
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover, &:active {
+        color: $color__font--primary;
+    }
+}

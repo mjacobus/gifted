@@ -1,0 +1,24 @@
+.o-post {
+    align-items: flex-start;
+    background-color: $color__background--light;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    max-width: 990px;
+    padding: 5% 7% 7% 7%;
+    width: 100%;
+
+    @include tablet-desktop {
+        padding: 2rem 2.5rem 2.5rem 2.5rem;
+    }
+
+    @include desktop {
+        margin: 0 0 2rem;
+        width: 70%;
+        max-width: none;
+    }
+}
+
+@import "__heading/o-post__heading";
+@import "__image/o-post__image";
