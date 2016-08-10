@@ -2,11 +2,23 @@
 
 Your APP for publishing gifts.
 
+[![Build Status](https://travis-ci.org/mjacobus/gifted.svg)](https://travis-ci.org/mjacobus/gifted)
+[![Coverage Status](https://coveralls.io/repos/github/mjacobus/gifted/badge.svg?branch=master)](https://coveralls.io/github/mjacobus/gifted?branch=master)
+[![Code Climate](https://codeclimate.com/github/mjacobus/gifted/badges/gpa.svg)](https://codeclimate.com/github/mjacobus/gifted)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mjacobus/gifted/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mjacobus/gifted/?branch=master)
+[![Build Status Scrutinizer](https://scrutinizer-ci.com/g/mjacobus/gifted/badges/build.png?b=master)](https://scrutinizer-ci.com/g/mjacobus/gifted/build-status/master)
+[![Dependency Status](https://gemnasium.com/mjacobus/gifted.svg)](https://gemnasium.com/mjacobus/gifted)
+
 ### Development
 
-**Requires ruby 2.2.2+.**
+- ruby 2.2.2+
+- bundler
+- MySQL server
 
 ### Set up the project
+
+
+#### On your OS
 
 - Install dependencies
 
@@ -17,14 +29,12 @@ bundle install
 - Set up the development database\*:
 
 ```bash
+cp .env.example .env              # environment configs (change it according to your settings)
 bundle install                    # install dependencies
 rake db:create                    # crete database
 rake db:migrate                   # create tables
 ./bin/create_dummy_data           # loads dummy data
 ```
-
-\* - Requires mysql. To change driver or credentials please refer
-to [config/database.yml](https://github.com/mjacobus/gifted/blob/master/config/database.yml)
 
 Start the server:
 
@@ -34,7 +44,7 @@ rails s
 
 Navigate to [http://localhost:3000](http://localhost:3000) and login as:
 
-## With vagrant
+#### With vagrant
 
 ```
 vagrant up

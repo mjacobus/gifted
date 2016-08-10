@@ -4,3 +4,19 @@
 require_relative 'config/application'
 
 Rails.application.load_tasks
+
+namespace :test do
+  desc "run tests with code coverage"
+  task :coverage do
+    ENV['CODE_COVERAGE'] = 'true'
+    Rake::Task['test'].invoke
+  end
+end
+
+namespace :ci do
+  desc "run tests on travis"
+  task :travis do
+    ENV['COVERALLS'] = 'true'
+    Rake::Task['test:coverage'].invoke
+  end
+end
