@@ -2,6 +2,13 @@
 
 Your APP for publishing gifts.
 
+[![Build Status](https://travis-ci.org/mjacobus/gifted.svg)](https://travis-ci.org/mjacobus/gifted)
+[![Coverage Status](https://coveralls.io/repos/github/mjacobus/gifted/badge.svg?branch=master)](https://coveralls.io/github/mjacobus/gifted?branch=master)
+[![Code Climate](https://codeclimate.com/github/mjacobus/gifted/badges/gpa.svg)](https://codeclimate.com/github/mjacobus/gifted)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mjacobus/gifted/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mjacobus/gifted/?branch=master)
+[![Build Status Scrutinizer](https://scrutinizer-ci.com/g/mjacobus/gifted/badges/build.png?b=master)](https://scrutinizer-ci.com/g/mjacobus/gifted/build-status/master)
+[![Dependency Status](https://gemnasium.com/mjacobus/gifted.svg)](https://gemnasium.com/mjacobus/gifted)
+
 ### Development
 
 - ruby 2.2.2+

@@ -4,3 +4,11 @@
 require_relative 'config/application'
 
 Rails.application.load_tasks
+
+namespace :ci do
+
+  desc "run tests on travis"
+  task :travis do
+    Rake::Task['test'].invoke
+  end
+end
