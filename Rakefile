@@ -23,6 +23,6 @@ namespace :ci do
   desc "run tests on travis"
   task :travis do
     ENV['COVERALLS'] = 'true'
-    Rake::Task['test:coverage'].invoke
+    Rake::Task['test:all'].invoke
   end
 end
