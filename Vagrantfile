@@ -6,6 +6,7 @@ require_relative "vagrant/vagrant_helper"
 Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.network "forwarded_port", guest: 3000, host: 3003
+  config.vm.network "forwarded_port", guest: 8888, host: 8888
   config.vm.hostname = "gifted.dev"
   config.ssh.forward_agent = true
 

@@ -18,3 +18,4 @@ env:
 script:
   - bundle exec rake db:drop db:create db:migrate
   - bundle exec rake ci:travis
+  - bundle exec rake jasmine:ci

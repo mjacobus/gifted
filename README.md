@@ -31,8 +31,8 @@ bundle install
 ```bash
 cp .env.example .env              # environment configs (change it according to your settings)
 bundle install                    # install dependencies
-rake db:create                    # crete database
-rake db:migrate                   # create tables
+bundle exe rake db:create         # crete database
+bundle exe rake db:migrate        # create tables
 ./bin/create_dummy_data           # loads dummy data
 ```
 
@@ -51,8 +51,8 @@ vagrant up
 vagrant ssh
 gem install bundler               # install dependency manager
 bundle install                    # install dependencies
-rake db:create                    # crete database
-rake db:migrate                   # create tables
+bundle exe rake db:create         # crete database
+bundle exe rake db:migrate        # create tables
 ./bin/create_dummy_data           # loads dummy data
 rails
 ```
@@ -64,3 +64,22 @@ rails s -b 0.0.0.0
 ```
 
 Navigate to [http://localhost:3003](http://localhost:3003) and login as:
+
+
+#### Running tests
+
+```
+RAILS_ENV=test bundle exec rake db:create     # create test database
+RAILS_ENV=test bundle exec rake db:migrate    # create test tables
+bundle exec rake test                         # execute ruby tests
+bundle exec rake jasmine:ci                   # execute javascript tests
+bundle exec rake test:all                     # execute all tests
+```
+
+##### Testing JS on the browser:
+
+```
+bundle exec rake jasmine  # starts server on port 8888
+```
+
+Open http://localhost:8888 in the browser
