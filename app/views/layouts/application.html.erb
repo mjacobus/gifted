@@ -13,7 +13,7 @@
 <body>
     <header class="o-header">
         <svg class="o-header__menu-main-icon a-icon a-icon--light" id="menu-main-icon">
-            <use xlink:href="symbol-defs.svg#icon-menu"></use>
+            <use xlink:href="assets/symbol-defs.svg#icon-menu"></use>
         </svg>
         <div class="m-menu-main" id="menu-main">
             <a class="m-menu-main__item a-link a-link--light" href="about.html">About</a>
@@ -27,30 +27,30 @@
             <button class="m-menu-account__button a-button a-button--light">Sign Up</button>
         </div>
         <svg class="o-header__menu-account-icon a-icon a-icon--light" id="menu-account-icon">
-            <use xlink:href="symbol-defs.svg#icon-more_vert"></use>
+            <use xlink:href="assets/symbol-defs.svg#icon-more_vert"></use>
         </svg>
     </header>
     <main class="o-content">
         <aside class="o-sidebar">
             <section class="o-sidebar__section">
                 <h3 class="o-sidebar__title">Advertisement</h3>
-                <img class="o-sidebar__image a-image" src="img/fake.jpg" width="500" height="299">
+                <img class="o-sidebar__image a-image" src="assets/fake.jpg" width="500" height="299">
             </section>
 
             <section class="o-sidebar__section">
                 <h3 class="o-sidebar__title">Hot on gifted:</h3>
                 <div>
-                    <img class="o-sidebar__image a-image" src="img/fake.jpg" width="500" height="299">
+                    <img class="o-sidebar__image a-image" src="assets/fake.jpg" width="500" height="299">
                 </div>
                 <h2 class="a-subheading a-subheading--dark"><a>Fake bugfix</a></h2>
                 <div>
-                    <img class="o-sidebar__image a-image" src="img/cat.jpg" width="1600" height="800">
+                    <img class="o-sidebar__image a-image" src="assets/cat.jpg" width="1600" height="800">
                 </div>
                 <h2 class="a-subheading a-subheading--dark"><a>Top 10 binary numbers</a></h2>
             </section>
         </aside>
 
-        <%= yield %>
+        <div id="posts"></div>
     </main>
 
     <!-- <div class="a-overlay" id="overlay"></div> -->
