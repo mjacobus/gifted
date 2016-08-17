@@ -30,41 +30,9 @@
             <use xlink:href="/assets/symbol-defs.svg#icon-more_vert"></use>
         </svg>
     </header>
-    <main class="o-content">
-        <div id="posts"></div>
 
-        <%= yield %>
+    <main class="o-content" id="content"></main>
 
-        <aside class="o-sidebar">
-            <section class="o-sidebar__section">
-                <h3 class="o-sidebar__title">Advertisement</h3>
-                <img class="o-sidebar__image a-image" src="/assets/fake.jpg" width="500" height="299">
-            </section>
-
-            <section class="o-sidebar__section">
-                <h3 class="o-sidebar__title">Hot on gifted:</h3>
-                <div>
-                    <img class="o-sidebar__image a-image" src="/assets/fake.jpg" width="500" height="299">
-                </div>
-                <h2 class="a-subheading a-subheading--dark"><a>Fake bugfix</a></h2>
-                <div>
-                    <img class="o-sidebar__image a-image" src="/assets/cat.jpg" width="1600" height="800">
-                </div>
-                <h2 class="a-subheading a-subheading--dark"><a>Top 10 binary numbers</a></h2>
-            </section>
-        </aside>
-    </main>
-
-    <!-- <div class="a-overlay" id="overlay"></div> -->
-
-    <footer>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </footer>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </body>

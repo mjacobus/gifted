@@ -10,4 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require_tree .
+//= require 00_base/libs/react.js
+//= require 00_base/libs/react-dom.js
+//= require 00_base/libs/react-dom-server.js
+//= require 00_base/ajax
+//= require 02_molecules/post
+//= require 03_organisms/sidebar
+//= require 03_organisms/content

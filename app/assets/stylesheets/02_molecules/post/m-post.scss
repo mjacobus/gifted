@@ -1,4 +1,4 @@
-.o-post {
+.m-post {
     align-items: flex-start;
     background-color: $color__background--light;
     display: flex;
@@ -20,5 +20,5 @@
     }
 }
 
-@import "__heading/o-post__heading";
-@import "__image/o-post__image";
+@import "__heading/m-post__heading";
+@import "__image/m-post__image";
