@@ -17,4 +17,4 @@ class Ajax {
     }
 }
 
-var ajax = new Ajax();
+APP.ajax = new Ajax();

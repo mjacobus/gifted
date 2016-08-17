@@ -12,7 +12,9 @@
 //
 //= require 00_base/libs/react.js
 //= require 00_base/libs/react-dom.js
-//= require 00_base/libs/react-dom-server.js
+//= require 00_base/libs/redux.js
+//= require 00_base/libs/react-redux.js
+//= require 00_base/app
 //= require 00_base/ajax
 //= require 02_molecules/post
 //= require 03_organisms/sidebar

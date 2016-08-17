@@ -8,7 +8,7 @@ class Content extends React.Component {
     }
 
     componentDidMount() {
-        this.serverRequest = ajax.getJSON('http://localhost:3003/gifs.json', function (response) {
+        this.serverRequest = APP.ajax.getJSON('http://localhost:3003/gifs.json', function (response) {
             this.setState({
                 posts: JSON.parse(response)
             });
