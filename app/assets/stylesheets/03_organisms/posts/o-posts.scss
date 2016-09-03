@@ -1,0 +1,10 @@
+.o-posts {
+    display: flex;
+    flex-direction: column;
+    max-width: 990px;
+
+    @include desktop {
+        max-width: none;
+        width: 70%;
+    }
+}
