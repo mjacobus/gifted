@@ -20,15 +20,9 @@ class Content extends React.Component {
     }
 
     render() {
-        const POSTS = this.state.posts;
-
         return (
-            <div>
-                {POSTS.map(function(post){
-                    const LINK = '/gifs/' + post.id;
-
-                    return <Post key={post.id} title={post.title} url={post.url} link={LINK} />;
-                })}
+            <div className="o-content__wrapper">
+                <Posts posts={this.state.posts} />
                 <Sidebar />
             </div>
         );

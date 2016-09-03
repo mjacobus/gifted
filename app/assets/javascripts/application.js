@@ -17,5 +17,6 @@
 //= require 00_base/app
 //= require 00_base/ajax
 //= require 02_molecules/post
+//= require 03_organisms/posts
 //= require 03_organisms/sidebar
 //= require 03_organisms/content
