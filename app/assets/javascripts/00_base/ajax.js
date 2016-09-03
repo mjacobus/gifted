@@ -1,6 +1,8 @@
 /**
  * Just a test
  */
+const APP = {};
+
 class Ajax {
     getJSON(url, callback) {
         var xobj = new XMLHttpRequest();

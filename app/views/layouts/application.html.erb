@@ -11,27 +11,7 @@
 </head>
 
 <body>
-    <header class="o-header">
-        <svg class="o-header__menu-main-icon a-icon a-icon--light" id="menu-main-icon">
-            <use xlink:href="/assets/symbol-defs.svg#icon-menu"></use>
-        </svg>
-        <div class="m-menu-main" id="menu-main">
-            <a class="m-menu-main__item a-link a-link--light" href="about.html">About</a>
-            <%= link_to 'Submit', new_gif_path, :class => "m-menu-main__item a-link a-link--light" %>
-        </div>
-
-        <a class="a-logo" href="/" title="Home"></a>
-
-        <div class="m-menu-account" id="menu-account">
-            <a class="m-menu-account__link a-link a-link--light" href="login.html">Log In</a>
-            <button class="m-menu-account__button a-button a-button--light">Sign Up</button>
-        </div>
-        <svg class="o-header__menu-account-icon a-icon a-icon--light" id="menu-account-icon">
-            <use xlink:href="/assets/symbol-defs.svg#icon-more_vert"></use>
-        </svg>
-    </header>
-
-    <main class="o-content" id="content"></main>
+    <div id="app"></div>
 
     <!-- <footer><%= yield %></footer> -->
 

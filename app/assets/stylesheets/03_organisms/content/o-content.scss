@@ -1,4 +1,5 @@
 .o-content {
+    display: flex;
     margin: 0 auto;
     max-width: 1200px;
     padding: 42px 5px 5px 5px;
@@ -13,5 +14,3 @@
         padding-top: 0px;
     }
 }
-
-@import "__wrapper/o-content__wrapper";

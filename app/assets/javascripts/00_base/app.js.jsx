@@ -1,4 +1,4 @@
-class Content extends React.Component {
+class App extends React.Component {
     constructor() {
         super();
 
@@ -21,9 +21,12 @@ class Content extends React.Component {
 
     render() {
         return (
-            <div className="o-content__wrapper">
-                <Posts posts={this.state.posts} />
-                <Sidebar />
+            <div>
+                <Header />
+                <main className="o-content">
+                    <Posts posts={this.state.posts} />
+                    <Sidebar />
+                </main>
             </div>
         );
     }
@@ -31,6 +34,6 @@ class Content extends React.Component {
 
 
 ReactDOM.render(
-    <Content />,
-    document.getElementById('content')
+    <App />,
+    document.getElementById('app')
 );
