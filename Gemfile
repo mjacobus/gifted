@@ -51,6 +51,10 @@ gem 'dotenv-rails', :groups => [:development, :test]
 gem 'sprockets'
 gem 'sprockets-es6'
 
+group :development, :test do
+  gem 'jasmine'
+end
+
 group :test do
   gem 'rails-controller-testing'
   gem 'machinist', '~>2.0'

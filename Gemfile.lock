@@ -83,6 +83,12 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
+    jasmine (2.4.0)
+      jasmine-core (~> 2.4)
+      phantomjs
+      rack (>= 1.2.1)
+      rake
+    jasmine-core (2.4.1)
     jbuilder (2.6.0)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -121,6 +127,7 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    phantomjs (2.1.1.0)
     pkg-config (1.1.7)
     poltergeist (1.10.0)
       capybara (~> 2.1)
@@ -231,6 +238,7 @@ DEPENDENCIES
   database_cleaner (~> 1.5)
   dotenv-rails
   faker
+  jasmine
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

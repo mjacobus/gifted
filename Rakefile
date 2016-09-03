@@ -11,12 +11,18 @@ namespace :test do
     ENV['CODE_COVERAGE'] = 'true'
     Rake::Task['test'].invoke
   end
+
+  desc "run all kinds of tests"
+  task :all do
+    Rake::Task['test'].invoke
+    Rake::Task['jasmine:ci'].invoke
+  end
 end
 
 namespace :ci do
   desc "run tests on travis"
   task :travis do
     ENV['COVERALLS'] = 'true'
-    Rake::Task['test:coverage'].invoke
+    Rake::Task['test:all'].invoke
   end
 end
