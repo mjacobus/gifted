@@ -5,35 +5,13 @@
     <title>Gifted</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag '05_pages/home', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700&subset=latin-ext">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700">
 </head>
 
 <body>
-    <header class="o-header">
-        <svg class="o-header__menu-main-icon a-icon a-icon--light" id="menu-main-icon">
-            <use xlink:href="/assets/symbol-defs.svg#icon-menu"></use>
-        </svg>
-        <div class="m-menu-main" id="menu-main">
-            <a class="m-menu-main__item a-link a-link--light" href="about.html">About</a>
-            <%= link_to 'Submit', new_gif_path, :class => "m-menu-main__item a-link a-link--light" %>
-        </div>
-
-        <a class="a-logo" href="/" title="Home"></a>
-
-        <div class="m-menu-account" id="menu-account">
-            <a class="m-menu-account__link a-link a-link--light" href="login.html">Log In</a>
-            <button class="m-menu-account__button a-button a-button--light">Sign Up</button>
-        </div>
-        <svg class="o-header__menu-account-icon a-icon a-icon--light" id="menu-account-icon">
-            <use xlink:href="/assets/symbol-defs.svg#icon-more_vert"></use>
-        </svg>
-    </header>
-
-    <main class="o-content" id="content"></main>
-
-    <!-- <footer><%= yield %></footer> -->
+    <div id="app"></div>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </body>

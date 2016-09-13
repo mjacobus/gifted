@@ -14,8 +14,9 @@
 //= require 00_base/libs/react-dom.js
 //= require 00_base/libs/redux.js
 //= require 00_base/libs/react-redux.js
-//= require 00_base/app
 //= require 00_base/ajax
 //= require 02_molecules/post
+//= require 03_organisms/posts
 //= require 03_organisms/sidebar
-//= require 03_organisms/content
+//= require 03_organisms/header
+//= require 00_base/app

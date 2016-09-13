@@ -5,7 +5,6 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto 2rem;
-    max-width: 990px;
     padding: 5% 7% 7% 7%;
     width: 100%;
 
@@ -15,8 +14,6 @@
 
     @include desktop {
         margin: 0 0 2rem;
-        width: 70%;
-        max-width: none;
     }
 }
 

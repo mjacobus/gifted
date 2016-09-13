@@ -1,4 +1,4 @@
-class Content extends React.Component {
+class App extends React.Component {
     constructor() {
         super();
 
@@ -20,16 +20,13 @@ class Content extends React.Component {
     }
 
     render() {
-        const POSTS = this.state.posts;
-
         return (
             <div>
-                {POSTS.map(function(post){
-                    const LINK = '/gifs/' + post.id;
-
-                    return <Post key={post.id} title={post.title} url={post.url} link={LINK} />;
-                })}
-                <Sidebar />
+                <Header />
+                <main className="o-content">
+                    <Posts posts={this.state.posts} />
+                    <Sidebar />
+                </main>
             </div>
         );
     }
@@ -37,6 +34,6 @@ class Content extends React.Component {
 
 
 ReactDOM.render(
-    <Content />,
-    document.getElementById('content')
+    <App />,
+    document.getElementById('app')
 );
