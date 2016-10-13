@@ -1,5 +1,7 @@
-.a-heading--link {
+.a-heading__link {
+    color: $color__font--dark;
     cursor: pointer;
+    text-decoration: none;
     transition: color 0.3s;
 
     &:hover, &:active {
