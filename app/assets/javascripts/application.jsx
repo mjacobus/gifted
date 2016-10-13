@@ -14,9 +14,26 @@
 //= require 00_base/libs/react-dom.js
 //= require 00_base/libs/redux.js
 //= require 00_base/libs/react-redux.js
-//= require 00_base/ajax
-//= require 02_molecules/post
-//= require 03_organisms/posts
-//= require 03_organisms/sidebar
-//= require 03_organisms/header
-//= require 00_base/app
+//= require 03_organisms/header/Header
+//= require 03_organisms/header/headerActions
+//= require 03_organisms/header/headerContainer
+//= require 03_organisms/header/headerReducers
+//= require 00_base/gifted/Gifted
+//= require rootReducers
+
+const Provider = ReactRedux.Provider;
+
+const initialState = {
+    'header': {
+        'menuMainOpen': false
+    }
+};
+
+const store = Redux.createStore(giftedApp, initialState);
+
+ReactDOM.render(
+    <Provider store={ store }>
+        <Gifted />
+    </Provider>,
+    document.getElementById('app')
+);
